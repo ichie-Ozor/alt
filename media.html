@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="media.css" />
     <title>Document</title>
   </head>
   <body>
@@ -10,28 +11,35 @@
     <picture>
       <source
         media="(min-width: 1200px)"
-        srcset="/image/desktop.jpg"
+        srcset="/asset/image/desktop.jpg"
+        width="100%"
         type="image/jpeg"
       />
 
       <source
-        media="(min-width: 768px)"
-        srcset="/image/laptop.jpg"
+        media="(min-width: 668px)"
+        srcset="/asset/image/laptop.jpg"
+        width="100%"
         type="image/jpeg"
       />
 
       <source
-        media="(max-width: 767px)"
-        srcset="/image/mobile.jpg"
+        media="(max-width: 667px)"
+        srcset="/asset/image/mobile.jpg"
+        width="100%"
         type="image/jpeg"
       />
 
-      <!-- Fallback image for browsers that do not support the picture element -->
       <img
-        src="/image/hand.jpg"
+        src="/asset/image/hand.jpg"
         alt=" in a Nigerian attire"
+        width="200px"
         style="max-width: 100%; height: auto"
       />
     </picture>
+    <h1>Audio</h1>
+    <audio src="/asset/Be Lifted Up.mp3" controls></audio>
+    <h1>Videos</h1>
+    <video src="/asset/paris.mp4" controls width="100%"></video>
   </body>
 </html>
