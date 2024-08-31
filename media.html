@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Images</h1>
+    <picture>
+      <source
+        media="(min-width: 1200px)"
+        srcset="/image/desktop.jpg"
+        type="image/jpeg"
+      />
+
+      <source
+        media="(min-width: 768px)"
+        srcset="/image/laptop.jpg"
+        type="image/jpeg"
+      />
+
+      <source
+        media="(max-width: 767px)"
+        srcset="/image/mobile.jpg"
+        type="image/jpeg"
+      />
+
+      <!-- Fallback image for browsers that do not support the picture element -->
+      <img
+        src="/image/hand.jpg"
+        alt=" in a Nigerian attire"
+        style="max-width: 100%; height: auto"
+      />
+    </picture>
+  </body>
+</html>
